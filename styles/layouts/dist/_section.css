@@ -1,0 +1,25 @@
+.sec-1 {
+  display: block;
+  isolation: isolate;
+  padding: 140px 108.5px 100px;
+  width: 768px;
+  height: auto;
+  background-color: var(--color1);
+}
+.sec-1__element {
+  position: absolute;
+  width: auto;
+  left: calc(50% - 1485px/2 - 30.5px);
+  top: 9.13%;
+  bottom: 24.89%;
+  opacity: 0.3;
+}
+
+.sec-2 {
+  display: block;
+  isolation: isolate;
+  padding: 100px 20px;
+  width: 768px;
+  height: auto;
+  background-color: #fff;
+}

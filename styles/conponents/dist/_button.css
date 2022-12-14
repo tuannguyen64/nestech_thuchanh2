@@ -1,0 +1,10 @@
+.btn {
+  display: block;
+  border-style: none;
+  padding: 20px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  color: #fff;
+  background-color: var(--color3);
+}

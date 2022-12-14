@@ -1,0 +1,18 @@
+.header{
+    height: 8.59vw;
+    padding: 4.17vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: var(--color1);
+    &__logo{
+        width: 191px;
+        height: 34px;
+    }
+    &__btn{
+        width: 42px;
+        height: 34px;
+    }
+}
