@@ -1,49 +1,67 @@
-.p1{
-    display: block;
-    width: 551px;
-    height: 811px;
+.content{
+    letter-spacing: -0.02em;
 
-    justify-items: center;
-    &__content{
-        color: #fff;
-        &--title{
-            font-weight: 700;
-            font-size: 54px;
-            line-height: 65px;
+    text-align: center;
 
-            text-align: center;
-        }
-        &--para{
-            margin-top: 24px;
-            margin-bottom: 60px;
-
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            
-            text-align: center;
+    &__title{
+        position: relative;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 65px;
+        background-size: cover;
+        span{
+            position: relative;
+            z-index: 1;
         }
     }
-    &__pic{
+    &__para{
+        margin: 24px 0 60px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &__underline{
+        margin-top: 44.84px;
+        position: absolute;
+        z-index: 1;
+    }
+}
+.picture{
+    &__1{
         width: 551px;
         height: 367px;
-        margin-top: 100px;
-        
-        background-color: var(--color2);
+        margin: 100px auto 0;
+
+        background-color: #C4DEFD;
     }
-}
-.p2{
-    display: flex;
-    width: 728px;
-    height: 707px;
-    
-    justify-items: center; background-color: antiquewhite;
-}
-.p3{
-    display: flex;
-    width: 728px;
-    height: 790.67px;
-    margin-top: 100px;
-    
-    justify-items: center; background-color: antiquewhite;
+    &__2{
+        width: 561px;
+        height: 349px;
+        margin: 60px auto 0;
+
+        background-color: #C4DEFD;
+    }
+    &__3{
+        display: block;
+        margin: 100px auto 0;
+    }
+    &__4{
+        width: 557px;
+        height: 388.93px;
+        margin: 60px auto 0;
+
+        background-color: #C4DEFD;
+    }
+    &__5{
+        width: 534px;
+        height: 397.95px;
+        margin: 0 auto 60px;
+
+        background-color: #C4DEFD;
+    }
+    &__6, &__7{
+        display: block;
+        margin: 0 auto 100px;
+    }
 }
