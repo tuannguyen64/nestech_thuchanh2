@@ -1,124 +1,109 @@
-.sec {
-  display: block;
-  isolation: isolate;
-  width: 768px;
-  height: auto;
-}
 .sec-1 {
-  padding: 140px 108.5px 100px;
-  background-color: #043873;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  position: relative;
+  background-color: var(--bg);
+  color: var(--w);
 }
-.sec-1__element {
+.sec-1__element--2 {
   position: absolute;
-  left: 0;
+  z-index: 1;
+  width: 100%;
+  top: 150px;
+}
+@media screen and (max-width: 1000px) {
+  .sec-1__element--2 {
+    display: none;
+  }
+}
+.sec-1__element--1 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 200px;
+}
+@media screen and (min-width: 1000px) {
+  .sec-1__element--1 {
+    display: none;
+  }
 }
 .sec-1__tab {
-  display: block;
-  width: 551px;
+  margin: 140px auto;
+  width: calc(100vw - 64px);
   height: auto;
-  justify-items: center;
-}
-.sec-2 {
-  padding: 100px 20px;
-  background-color: #fff;
-  color: #212529;
-}
-.sec-2__element {
-  position: absolute;
-  left: 0;
-}
-.sec-2__tab-1 {
-  display: block;
-  width: 728px;
-  height: auto;
-  justify-items: center;
-}
-.sec-2__tab-2 {
-  display: block;
-  width: 728px;
-  height: auto;
-  margin: 100px 0 0;
-  justify-items: center;
-}
-.sec-3 {
-  padding: 100px 32px;
-  background-color: #043873;
-  color: #fff;
-}
-.sec-3__tab {
-  display: block;
-  width: 704px;
-  height: auto;
-  justify-items: center;
-}
-.sec-4 {
-  padding: 140px 20px;
-  background-color: #fff;
-  color: #212529;
-}
-.sec-5 {
-  padding: 140px 20px;
-  background-color: #fff;
-  color: #212529;
-}
-.sec-5__tab-2 {
-  width: 1481px;
-  height: 711px;
-  padding: 0;
+  z-index: 2;
   display: flex;
-  position: relative;
-  left: -376.5px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
-.sec-6 {
-  padding: 140px 144px 140px 20px;
-  background-color: #043873;
-  color: #fff;
+.sec-1__tab--content {
+  height: auto;
+  width: 666px;
 }
-.sec-6__element {
+.sec-1__tab--content #btn2 {
+  display: none;
   position: absolute;
-  left: -20px;
 }
-.sec-7 {
-  padding: 140px 20px;
-  background-color: #fff;
-  color: #212529;
+.sec-1__tab--pic {
+  margin-left: 30.88px;
+  width: 814px;
+  height: 542.21px;
+  background-color: var(--pic);
 }
-.sec-8 {
-  padding: 140px 20px;
-  background-color: #fff;
-  color: #212529;
+@media screen and (max-width: 1544px) {
+  .sec-1__tab--pic {
+    margin-left: 2vw;
+    width: calc((98vw - 730px) * 1);
+    height: calc((98vw - 730px) * 0.6661);
+  }
 }
-.sec-8__tab--sponsors img {
-  padding-top: 100px;
-  display: block;
-  margin: 0 auto;
+@media screen and (max-width: 1480px) {
+  .sec-1__tab--content {
+    margin: auto;
+    width: calc(45vw);
+  }
+  .sec-1__tab--pic {
+    width: calc((53vw - 64px) * 1);
+    height: calc((53vw - 64px) * 0.6661);
+  }
 }
-.sec-9 {
-  padding: 140px 20px;
-  background-color: #043873;
-  color: #fff;
+@media screen and (max-width: 1000px) {
+  .sec-1__tab {
+    flex-direction: column;
+    width: 551px;
+    margin: 140px auto 100px;
+  }
+  .sec-1__tab--content {
+    width: 100%;
+  }
+  .sec-1__tab--content #btn1 {
+    display: none;
+    position: absolute;
+  }
+  .sec-1__tab--content #btn2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    display: block;
+    position: relative;
+  }
+  .sec-1__tab--pic {
+    width: 551px;
+    height: 367px;
+    margin: 100px 0 0;
+  }
 }
-.sec-10 {
-  padding: 140px 20px;
-  background-color: #fff;
-  color: #212529;
-}
-.sec-10__tab-2 {
-  width: 1088px;
-  height: 430px;
-  padding: 0;
-  margin: 60px 0;
-  display: flex;
-  position: relative;
-  left: -180px;
-}
-.sec-10__end {
-  display: block;
-  margin: 0 auto;
-}
-.sec-11 {
-  padding: 140px 140px 32px 20px;
-  background-color: #043873;
-  color: #fff;
+@media screen and (max-width: 583px) {
+  .sec-1__tab {
+    flex-direction: column;
+    width: calc(100vw - 32px);
+    margin: 80px auto;
+  }
+  .sec-1__tab--pic {
+    width: calc(100vw - 32px);
+    height: calc((100vw - 32px) * 0.6661);
+  }
 }

@@ -1,13 +1,19 @@
 .btn{
     display: block;
+    overflow: hidden;
     border-style: none;
     
     padding: 20px 40px;
-    margin-right: auto;
-    margin-left: auto;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
 
     border-radius: 8px;
-    color: #fff;
-    background-color: #4F9CF9;
-    ;
+    color: var(--w);
+    background-color: var(--btn1);
+}
+button:hover{
+    opacity: 0.8;
 }

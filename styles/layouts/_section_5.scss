@@ -1,0 +1,82 @@
+.sec-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 320px;
+    
+    background-color: var(--w);
+    color: var(--b);
+    &__tab-1{
+        margin: 140px auto 0;
+        width: calc(100vw - 64px);
+        height: auto;
+        
+        &--content{
+            width: 100%;
+        }
+        @media screen and (max-width: 583px)  {
+            width: calc(100vw - 32px);
+            margin: 80px auto 0;
+        }
+        #center{
+            text-align: center;
+        }
+    }
+    &__tab-2{
+        height: auto;
+        margin-bottom: 140px;
+        
+        display: flex;
+        flex-direction: row;        
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        position: relative;
+
+        @media screen and (max-width: 1545px) and (min-width: 1000px) {
+            justify-content: center;
+            padding: 0 32px;
+            .price{
+                &-left, &-mid, &-right{
+                    flex-shrink: 1;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (min-width: 504.33px) {
+            justify-content: left;
+            .price{
+                &-left, &-mid, &-right{
+                    flex-shrink: 0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 504.33px) {
+            justify-content: left;
+            margin-bottom: 80px;
+            .price{
+                &-left, &-right{
+                    display: none;
+                    position: absolute;
+                }
+                &-mid{
+                    flex-shrink: 1;
+                    margin: 0 16px;
+                }
+            }
+        }
+    }
+    .slider{
+        display: none;
+        position: absolute;
+        @media screen and (max-width: 504.33px) {
+            width: 60px;
+            display: block;
+            position: relative;
+            margin: 0 auto 80px;
+        }
+    }
+}

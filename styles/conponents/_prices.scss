@@ -1,0 +1,105 @@
+.price{
+    &-left, &-right{
+        padding: 40px 44px;
+        margin: 41.5px 0;
+        width: 472.33px;
+        flex-shrink: 0;
+        
+        color: var(--b);
+        background: var(--w);
+        border: 1px solid var(--y);
+        border-radius: 10px;
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__monney{
+            padding: 25px 0;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            
+            letter-spacing: -0.02em;
+        }
+        &__intro{
+            padding-bottom: 11px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+            letter-spacing: -0.02em;
+        }
+        &__ul{
+            li{
+                padding: 14px 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                
+                letter-spacing: -0.02em;
+            }
+        }
+        button{
+        }
+        &:hover{
+            background-color: var(--y);
+            
+        }
+    }
+    &-mid{
+        padding: 80px 44px;
+        margin: 0 32px;
+        width: 472.33px;
+        flex-shrink: 0;
+    
+        color: var(--w);
+        background: var(--bg);
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__monney{
+            padding: 25px 0;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            
+            letter-spacing: -0.02em;
+            
+            color: var(--y);
+        }
+        &__intro{
+            padding-bottom: 11px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+            letter-spacing: -0.02em;
+        }
+        &__ul{
+            li{
+                padding: 14px 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                
+                letter-spacing: -0.02em;
+            }
+        }
+        button{
+            margin-top: 11px;
+        }
+        &:hover{
+            color: var(--b);
+            background-color: var(--w);
+            border: 1px solid var(--bg);
+            .price-mid__monney{
+                color: var(--bg);
+            }
+        }
+    }
+}

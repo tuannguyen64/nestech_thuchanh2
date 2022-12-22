@@ -1,11 +1,12 @@
-.sec-1{
+.sec-9{
     display: flex;
     justify-content: center;
     min-width: 320px;
-    position: relative;
     
     background-color: var(--bg);
     color: var(--w);
+    position: relative;
+    
     &__element{
         &--2{
             position: absolute;
@@ -43,23 +44,16 @@
         &--content{
             height: auto;
             width: 666px;
-            #btn2{
-                display: none;
-                position: absolute;
-            }
         }
         &--pic{
-            margin-left: 30.88px;
-            width: 814px;
-            height: 542.21px;
-    
-            background-color: var(--pic);
+            margin-right: 77.2px;
+            height: auto;
+            width: 736.8px;
         }
         @media screen and (max-width: 1544px) {
             &--pic{
-                margin-left: 2vw;
-                width: calc((98vw - 730px) * 1);
-                height: calc((98vw - 730px) * 0.6661);
+                margin-right: 5vw;
+                width: calc((95vw - 730px) * 1);
             }
         }
         @media screen and (max-width: 1480px){
@@ -68,43 +62,27 @@
                 width: calc(45vw);
             }
             &--pic{
-                width: calc((53vw - 64px) * 1);
-                height: calc((53vw - 64px) * 0.6661);
+                width: calc((50vw - 64px) * 1);
             }
         }
         @media screen and (max-width: 1000px)  {
             flex-direction: column;
-            width: 551px;
-            margin: 140px auto 100px;
+            margin: 100px auto;
             &--content{
                 width: 100%;
-
-                #btn1{
-                    display: none;
-                    position: absolute;
-                }
-                #btn2{
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 30px;
-                    display: block;
-                    position: relative;
-                }
             }
             &--pic{
-                width: 551px;
-                height: 367px;
-                margin: 100px 0 0;
+                width: 651px;
+                margin: 0 auto 60px;
             }
         }
         
-        @media screen and (max-width: 583px)  {
+        @media screen and (max-width: 677px)  {
             flex-direction: column;
             width: calc(100vw - 32px);
             margin: 80px auto;
             &--pic{
                 width: calc(100vw - 32px);
-                height: calc((100vw - 32px) * 0.6661);
             }
         }
     }

@@ -1,0 +1,203 @@
+.client-1, .client-3 {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  width: 341.33px;
+  height: 430px;
+  color: var(--w);
+  background: var(--btn1);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.client-1__avata, .client-3__avata {
+  width: 70px;
+  display: block;
+}
+.client-1__saying, .client-3__saying {
+  margin: 35px 0 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  letter-spacing: -0.02em;
+}
+.client-1__author, .client-3__author {
+  display: flex;
+  justify-content: space-around;
+}
+.client-1__author--name b, .client-3__author--name b {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
+}
+.client-1__author--name p, .client-3__author--name p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  letter-spacing: -0.02em;
+}
+.client-1__author--star, .client-3__author--star {
+  width: 103px;
+  height: 15px;
+}
+.client-1:hover, .client-3:hover {
+  opacity: 0.6;
+}
+.client-2 {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  width: 341.33px;
+  height: 430px;
+  color: var(--b);
+  background: var(--w);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.client-2__avata {
+  width: 70px;
+  display: block;
+}
+.client-2__saying {
+  margin: 35px 0 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  letter-spacing: -0.02em;
+}
+.client-2__author {
+  display: flex;
+  justify-content: space-around;
+}
+.client-2__author--name b {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
+}
+.client-2__author--name p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  letter-spacing: -0.02em;
+}
+.client-2__author--star {
+  width: 103px;
+  height: 15px;
+}
+.client-2:hover {
+  opacity: 0.6;
+}
+.client-left {
+  padding: 60px 24px;
+  width: 471.67px;
+  color: var(--b);
+  background: var(--w);
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.client-left__content {
+  padding: 0px 0px 40px;
+  border-bottom: 1px solid var(--b);
+}
+.client-left__content--quote {
+  width: 86px;
+}
+.client-left__content--saying {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.client-left__author {
+  display: flex;
+  gap: 42px;
+}
+.client-left__author--ava {
+  width: 95px;
+}
+.client-left__author--saying b {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.client-left__author--saying p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+.client-left:hover {
+  opacity: 0.6;
+}
+.client-mid, .client-right {
+  padding: 60px 24px;
+  width: 471.67px;
+  color: var(--w);
+  background: var(--btn1);
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.client-mid__content, .client-right__content {
+  padding: 0px 0px 40px;
+  border-bottom: 1px solid var(--w);
+}
+.client-mid__content--quote, .client-right__content--quote {
+  width: 86px;
+}
+.client-mid__content--saying, .client-right__content--saying {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.client-mid__author, .client-right__author {
+  display: flex;
+  gap: 42px;
+}
+.client-mid__author--ava, .client-right__author--ava {
+  width: 95px;
+}
+.client-mid__author--saying b, .client-right__author--saying b {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.client-mid__author--saying p, .client-right__author--saying p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+.client-mid:hover, .client-right:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .client-1, .client-2, .client-3 {
+    display: block;
+    position: relative;
+  }
+  .client-left, .client-right, .client-mid {
+    display: none;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 500px) {
+  .client-right, .client-mid {
+    display: none;
+    position: absolute;
+  }
+}

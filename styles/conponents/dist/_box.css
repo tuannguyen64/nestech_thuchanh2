@@ -2,10 +2,10 @@
   padding: 40px 44px;
   margin: 41.5px 0;
   width: 472.33px;
-  height: 631px;
-  color: #000000;
-  background: #FFFFFF;
-  border: 1px solid #FFE492;
+  flex-shrink: 0;
+  color: var(--b);
+  background: var(--w);
+  border: 1px solid var(--y);
   border-radius: 10px;
 }
 .price-left__title, .price-right__title {
@@ -34,13 +34,16 @@
   line-height: 20px;
   letter-spacing: -0.02em;
 }
+.price-left button, .price-right button {
+  margin-top: 11px;
+}
 .price-mid {
   padding: 80px 44px;
   margin: 0 32px;
   width: 472.33px;
-  height: 711px;
-  color: #fff;
-  background: #043873;
+  flex-shrink: 0;
+  color: var(--w);
+  background: var(--bg);
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
 }
@@ -55,7 +58,7 @@
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.02em;
-  color: #FFE492;
+  color: var(--y);
 }
 .price-mid__intro {
   padding-bottom: 11px;
@@ -71,6 +74,9 @@
   line-height: 20px;
   letter-spacing: -0.02em;
 }
+.price-mid button {
+  margin-top: 11px;
+}
 
 .client-1, .client-3 {
   padding: 20px;
@@ -79,6 +85,7 @@
   color: #FFFFFF;
   background: #4F9CF9;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 .client-1__avata, .client-3__avata {
   width: 70px;
@@ -123,6 +130,7 @@
   background: #FFFFFF;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
+  flex-shrink: 0;
 }
 .client-2__avata {
   width: 70px;

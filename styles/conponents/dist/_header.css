@@ -1,16 +1,107 @@
 .header {
-  height: 8.59vw;
-  padding: 4.17vw;
+  height: 92px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+.header__frame {
+  width: calc(100% - 64px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #043873;
+}
+@media screen and (min-width: 1544px) {
+  .header__frame {
+    width: 1480px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .header__frame {
+    width: calc(100% - 32px);
+  }
+}
+@media screen and (max-width: 652px) {
+  .header {
+    height: 56px;
+  }
+}
+@media screen and (max-width: 1071px) and (min-width: 652px) {
+  .header {
+    height: 8.59vw;
+  }
 }
 .header__logo {
   width: 191px;
   height: 34px;
 }
-.header__btn {
-  width: 42px;
-  height: 34px;
+@media screen and (max-width: 768px) and (min-width: 539px) {
+  .header__logo {
+    width: 24.87vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 538px) {
+  .header__logo {
+    width: 134px;
+    height: auto;
+  }
+}
+.header__navbar {
+  display: flex;
+}
+.header__navbar--buttons {
+  display: flex;
+}
+.header__navbar--buttons button:first-child {
+  margin-right: 20px;
+  color: var(--b);
+  background-color: var(--btn2);
+}
+.header__navbar--buttons button:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1000px) {
+  .header__navbar--buttons {
+    display: none;
+    position: absolute;
+  }
+}
+.header__navbar--menu {
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+  position: relative;
+}
+.header__navbar--menu li {
+  display: block;
+  margin-right: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--w);
+}
+.header__navbar--menu li:hover {
+  opacity: 0.8;
+}
+.header__navbar--menu-icon {
+  display: none;
+  position: absolute;
+}
+.header__navbar--menu-icon p:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 1300px) {
+  .header__navbar--buttons button:last-child {
+    margin-right: 24px;
+  }
+  .header__navbar--menu {
+    display: none;
+    position: absolute;
+  }
+  .header__navbar--menu-icon {
+    display: flex;
+    position: static;
+  }
 }

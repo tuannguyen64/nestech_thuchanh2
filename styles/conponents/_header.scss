@@ -1,18 +1,102 @@
 .header{
-    height: 8.59vw;
-    padding: 4.17vw;
+    height: 92px;
+    min-width: 320px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    &__frame{
+        width: calc(100% - 64px);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (min-width: 1544px) {
+            width: 1480px;
+        }
+        @media screen and (max-width: 384px) {
+            width: calc(100% - 32px);
+        }
+    }
+    @media screen and (max-width: 652px) {
+        height: 56px;
+    }
+    @media screen and (max-width: 1071px) and (min-width: 652px) {
+        height: 8.59vw;
+    }
     
-    background: #043873;
+    background: var(--bg);
     &__logo{
         width: 191px;
         height: 34px;
+        @media screen and (max-width: 768px) and (min-width: 539px) {
+            width: 24.87vw;
+            height: auto;
+        }
+        @media screen and (max-width: 538px) {
+            width: 134px;
+            height: auto;
+        }
+
     }
-    &__btn{
-        width: 42px;
-        height: 34px;
+    &__navbar{
+        display: flex;
+        &--buttons{
+            display: flex;
+            button:first-child{
+                margin-right: 20px;
+
+                color: var(--b);
+                background-color: var(--btn2);
+            }
+            button:last-child{
+                margin-right: 0;
+            }
+            @media screen and (max-width: 1000px) {
+                display: none;
+                position: absolute;
+            }
+        }
+        &--menu{
+            display: flex;
+            align-items: center;
+            margin-right: 28px;
+            
+            position: relative;
+            li{
+                display: block;
+                margin-right: 32px;
+                
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+
+                color: var(--w);
+                
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+        &--menu-icon{
+            display: none;
+            position: absolute; 
+            p:hover{
+                opacity: 0.8;
+            }      
+        }
+        @media screen and (max-width: 1300px) {
+            &--buttons button:last-child{
+                margin-right: 24px;
+            }
+            &--menu{
+                display: none;
+                position: absolute;
+            }
+            &--menu-icon{
+                display: flex;
+                position: static;
+            }
+        }
     }
 }

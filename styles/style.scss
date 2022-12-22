@@ -1,8 +1,24 @@
+/* Import conponents */
 @import "./conponents/common";
 @import "./conponents/header";
-@import "./layouts/section";
-@import "./layouts/content";
+@import "./conponents/content";
 @import "./conponents/footer";
 @import "./conponents/reset";
 @import "./conponents/button";
-@import "./conponents/box";
+@import "./conponents/clients";
+@import "./conponents/prices";
+@import "./conponents/mixins";
+@import "./conponents/underline";
+
+/* Import layouts */
+@import "./layouts/section";
+@import "./layouts/section_2";
+@import "./layouts/section_3";
+@import "./layouts/section_4";
+@import "./layouts/section_5";
+@import "./layouts/section_6";
+@import "./layouts/section_7";
+@import "./layouts/section_8";
+@import "./layouts/section_9";
+@import "./layouts/section_10";
+@import "./layouts/section_11";

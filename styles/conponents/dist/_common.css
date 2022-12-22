@@ -1,6 +1,28 @@
+* {
+  --bg: #043873;
+  --w: #FFFFFF;
+  --b: #212529;
+  --btn1: #4F9CF9;
+  --btn2: #FFE492;
+  --y: #FFE492;
+  --pic: #C4DEFD;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   font-family: Inter, Avenir, Arial, Helvetica, sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: scroll;
+  }
 }
