@@ -12,14 +12,6 @@
   line-height: 77px;
   background-size: cover;
 }
-.content__title span {
-  position: relative;
-  z-index: 1;
-}
-.content__title span span {
-  position: relative;
-  z-index: 1;
-}
 .content__para {
   margin: 24px 0 60px;
   font-weight: 400;

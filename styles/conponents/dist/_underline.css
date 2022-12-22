@@ -1,8 +1,22 @@
 .under-line {
+  position: relative;
+  z-index: 1;
+}
+.under-line::after {
+  z-index: -1;
+  content: "";
   display: inline-block;
-  padding-bottom: 10px;
-  background-image: url(./underline1.png);
-  background-position: 0 100%;
+  background-image: url(../../assets/underline1.png);
+  background-position: inherit;
   background-repeat: no-repeat;
-  background-size: 145%;
+  background-size: contain;
+  width: 100%;
+  height: 31px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+#_6::after {
+  background-image: url(../../assets/underline2.png);
 }
